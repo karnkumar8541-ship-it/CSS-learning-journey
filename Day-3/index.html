@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css basic</title>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+        background-color: lightgrey;
+        border-bottom: 1px solid grey;
+        padding: 20px;
+      }
+      .links {
+        display: flex;
+        gap: 0 20px;
+      }
+      .links span {
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .links span:hover {
+        color: blueviolet;
+      }
+      .logo {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">LOGO</div>
+      <div class="links">
+        <span>Home</span>
+        <span>About</span>
+        <span>Contact</span>
+      </div>
+    </div>
+  </body>
+</html>
