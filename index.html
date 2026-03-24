@@ -2,37 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Navbar Practice</title>
+    <title>Day 2 Layout</title>
   </head>
   <style>
-    .navbar {
+    .main {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 60px;
-      padding: 10px 30px;
-      box-sizing: border-box;
-      background-color: #0f172a;
-      color: white;
+      height: 100vh;
     }
-    .menu {
-  display: flex;
-  gap: 20px;
-}
-
-.menu span {
-  cursor: pointer;
-}
+    .sidebar {
+      width: 200px;
+      background-color:white;
+      padding: 10px;
+    }
+    .content {
+      flex-grow: 1;
+      background-color: orange;
+      padding: 10px;
+    }
   </style>
   <body>
-    <div class="navbar">
-      <div class="logo">Logo</div>
-
-      <div class="menu">
-        <span>Home</span>
-        <span>About</span>
-        <span>Contact</span>
-      </div>
+    <div class="main">
+      <div class="sidebar">Sidebar</div>
+      <div class="content">Content</div>
     </div>
   </body>
 </html>
